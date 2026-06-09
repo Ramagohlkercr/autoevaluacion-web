@@ -4,27 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diario Digital - Noticias del Día</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Diario Digital</h1>
-    <p>Tu fuente de noticias actualizada</p>
+    <header>
+        <h1>Diario Digital</h1>
+        <p>Tu fuente de noticias actualizada</p>
 
-    <h2>La tecnología web avanza hacia un futuro más accesible</h2>
-    <p>Publicado el 9 de junio de 2026</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#noticia">Noticia</a></li>
+                <li><a href="#suscripcion">Suscripción</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <p>
-        En los últimos años, el desarrollo de aplicaciones web ha experimentado
-        un crecimiento sin precedentes. Cada vez más empresas apuestan por
-        tecnologías abiertas y estándares accesibles.
-    </p>
+    <main id="inicio">
+        <section id="noticia">
+            <article>
+                <header>
+                    <h2>La tecnología web avanza hacia un futuro más accesible</h2>
+                    <p>
+                        Publicado por <strong>Redacción Digital</strong> el
+                        <time datetime="2026-06-09">9 de junio de 2026</time>
+                    </p>
+                </header>
 
-    <p>
-        Según los expertos, el uso correcto de etiquetas HTML mejora notablemente
-        la accesibilidad y el posicionamiento en buscadores.
-    </p>
+                <p>
+                    En los últimos años, el desarrollo de
+                    <span>aplicaciones web</span> ha experimentado un crecimiento
+                    <strong>sin precedentes</strong>. Cada vez más empresas apuestan
+                    por tecnologías abiertas y estándares accesibles.
+                </p>
 
-    <p>Categoría: Tecnología</p>
+                <p>
+                    Según los expertos, el uso correcto de etiquetas
+                    <span>HTML semánticas</span> mejora notablemente la
+                    accesibilidad y el posicionamiento en buscadores. Puedes leer
+                    más en la
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener">
+                        documentación oficial de MDN
+                    </a>.
+                </p>
 
-    <p>&copy; 2026 Diario Digital. Todos los derechos reservados.</p>
+                <section>
+                    <h3>Puntos destacados</h3>
+                    <ul>
+                        <li>Mayor accesibilidad para todos los usuarios.</li>
+                        <li>Mejor estructura y mantenimiento del código.</li>
+                        <li>Optimización para motores de búsqueda (SEO).</li>
+                    </ul>
+                </section>
+
+                <footer>
+                    <p>
+                        Categoría: <strong>Tecnología</strong> —
+                        <span>Tiempo de lectura: 3 minutos</span>
+                    </p>
+                </footer>
+            </article>
+        </section>
+
+        <section id="suscripcion">
+            <h2>Suscríbete a nuestro boletín</h2>
+            <p>Recibe las últimas noticias directamente en tu correo electrónico.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de suscripción</legend>
+
+                    <p>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                    </p>
+
+                    <p>
+                        <label for="intereses">Tema de interés:</label>
+                        <select id="intereses" name="intereses">
+                            <option value="tecnologia">Tecnología</option>
+                            <option value="deportes">Deportes</option>
+                            <option value="cultura">Cultura</option>
+                            <option value="economia">Economía</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comentario">Comentario (opcional):</label>
+                        <textarea id="comentario" name="comentario" rows="4" cols="40" placeholder="Escribe un comentario..."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Suscribirme</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Diario Digital. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
