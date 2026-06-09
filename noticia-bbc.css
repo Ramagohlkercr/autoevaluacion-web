@@ -1,0 +1,273 @@
+/* ===== Selector universal: reset base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Selector de etiqueta: estilos generales ===== */
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #141414;
+    background-color: #ffffff;
+    line-height: 1.5;
+}
+
+a {
+    color: #1380a1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+/* ===== Cabecera del sitio (estilo BBC) ===== */
+.site-header {
+    background-color: #000000;
+    border-bottom: 4px solid #ffffff;
+}
+
+.site-header__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+}
+
+.site-logo {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 4px;
+    padding: 0.2rem 0.5rem;
+}
+
+.site-logo:hover {
+    text-decoration: none;
+}
+
+/* ===== Selector descendente: navegación ===== */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.main-nav ul li a {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 0.6rem 0;
+    display: inline-block;
+}
+
+.main-nav ul li a:hover {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+/* ===== Contenedor del artículo ===== */
+.article-wrapper {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* ===== Selector de clase: sección/categoría ===== */
+.article__section {
+    color: #b80000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.8rem;
+}
+
+/* ===== Titular ===== */
+.article__headline {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #141414;
+    margin-bottom: 1.2rem;
+}
+
+/* ===== Datos del autor ===== */
+.article__byline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0.8rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.author-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.author-role {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a5a5a;
+    font-size: 0.85rem;
+}
+
+.article__date {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a5a5a;
+    font-size: 0.85rem;
+}
+
+/* ===== Imagen destacada ===== */
+.article__figure {
+    margin-bottom: 1.5rem;
+}
+
+.figure__placeholder {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5rem 1rem;
+    font-size: 1.1rem;
+}
+
+.figure__caption {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    color: #5a5a5a;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.figure__credit {
+    display: block;
+    color: #8a8a8a;
+    margin-top: 0.2rem;
+}
+
+/* ===== Cuerpo de la noticia ===== */
+.article__body p {
+    font-size: 1.15rem;
+    margin-bottom: 1.3rem;
+    color: #141414;
+}
+
+.article__body strong {
+    font-weight: 700;
+}
+
+.article__body em {
+    font-style: italic;
+}
+
+/* ===== Subtítulos dentro del cuerpo ===== */
+.article__subhead {
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem;
+    color: #141414;
+}
+
+/* ===== Cita destacada ===== */
+.article__quote {
+    border-left: 4px solid #b80000;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    margin: 1.8rem 0;
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #333333;
+}
+
+.article__quote cite {
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5a5a5a;
+}
+
+/* ===== Temas relacionados ===== */
+.article__topics {
+    margin-top: 2.5rem;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 1.5rem;
+}
+
+.article__topics h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.topic-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.topic-list li a {
+    display: inline-block;
+    background-color: #f2f2f2;
+    color: #141414;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 3px;
+}
+
+.topic-list li a:hover {
+    background-color: #e0e0e0;
+    text-decoration: none;
+}
+
+/* ===== Pie de página ===== */
+.site-footer {
+    background-color: #000000;
+    color: #b0b0b0;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+}
+
+.site-footer__note {
+    margin-top: 0.5rem;
+    color: #777777;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .article__headline {
+        font-size: 1.8rem;
+    }
+
+    .main-nav ul {
+        gap: 0.8rem;
+    }
+
+    .site-header__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.8rem;
+    }
+
+    .figure__placeholder {
+        padding: 3rem 1rem;
+    }
+}
